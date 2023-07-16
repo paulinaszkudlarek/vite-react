@@ -8,10 +8,10 @@ function Person({ name, role, image, imagex2, imagex3 }) {
         <img className="person__image" src={image} srcSet={`${imagex2} 2x, ${imagex3} 3x, `} alt={name} />
         <div className="person__overlay"></div>
         <div className="icons">
-          <img src="/img/facebook.svg" alt="Facebook"/>
-          <img src="/img/twitter.svg" alt="Twitter" />
-          <img src="/img/pinterest.svg" alt="Pinterest" />
-          <img src="/img/instagram.svg" alt="Instagram" />
+          <img src="img/facebook.svg" alt="Facebook"/>
+          <img src="img/twitter.svg" alt="Twitter" />
+          <img src="img/pinterest.svg" alt="Pinterest" />
+          <img src="img/instagram.svg" alt="Instagram" />
         </div>
       </div>
       <div>
@@ -27,23 +27,23 @@ function Team() {
     {
       name: 'Matthew Dex',
       role: 'Graphic Design',
-      image: '/img/person1.png',
-      imagex2: '/img/person1@x2.png',
-      imagex3: '/img/person1@x3.png'
+      image: 'img/person1.png',
+      imagex2: 'img/person1@x2.png',
+      imagex3: 'img/person1@x3.png'
     },
     {
       name: 'Christopher Campbell',
       role: 'Branding/UX Design',
-      image: '/img/person2.png',
-      imagex2: '/img/person2@x2.png',
-      imagex3: '/img/person2@x3.png'
+      image: 'img/person2.png',
+      imagex2: 'img/person2@x2.png',
+      imagex3: 'img/person2@x3.png'
     },
     {
       name: 'Michael Fertig',
       role: 'Developer',
-      image: '/img/person3.png',
-      imagex2: '/img/person3@x2.png',
-      imagex3: '/img/person3@x3.png'
+      image: 'img/person3.png',
+      imagex2: 'img/person3@x2.png',
+      imagex3: 'img/person3@x3.png'
     }
   ];
 

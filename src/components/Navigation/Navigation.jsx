@@ -18,12 +18,12 @@ function Navigation() {
         {/* Mobile Navigation */}
         <div className={`navigation__mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
           <div className="navigation__icons">
-            <img src="/img/cart-icon.svg" className="navigation__icon" alt="Koszyk zakupowy" />
-            <img src="/img/magnifying-glass-icon.svg" className="navigation__icon" alt="Lupa, wyszukaj" />
+            <img src="img/cart-icon.svg" className="navigation__icon" alt="Koszyk zakupowy" />
+            <img src="img/magnifying-glass-icon.svg" className="navigation__icon" alt="Lupa, wyszukaj" />
           </div>
           <div className="navigation__mobile-menu-button" onClick={toggleMobileMenu}>
-            <img src="/img/hamburger.svg" className={`hamburger ${isMobileMenuOpen ? 'hamburger--close' : 'hamburger--open'}`} alt="Menu" />
-            <img src="/img/close.svg" className={`x ${isMobileMenuOpen ? 'x--open' : 'x--close'}`} alt="Menu" />
+            <img src="img/hamburger.svg" className={`hamburger ${isMobileMenuOpen ? 'hamburger--close' : 'hamburger--open'}`} alt="Menu" />
+            <img src="img/close.svg" className={`x ${isMobileMenuOpen ? 'x--open' : 'x--close'}`} alt="Menu" />
           </div>
           <div className="navigation__mobile-menu-links">
             <NavLink className="navigation__link" to="/about" onClick={toggleMobileMenu}>About</NavLink>
@@ -43,8 +43,8 @@ function Navigation() {
           <NavLink className="navigation__link" to="/contact">Contact</NavLink>
         </div>
         <div className="navigation__icons--desktop">
-          <img src="/img/cart-icon.svg" className="navigation__icon" alt="Koszyk zakupowy" />
-          <img src="/img/magnifying-glass-icon.svg" className="navigation__icon" alt="Lupa, wyszukaj" />
+          <img src="img/cart-icon.svg" className="navigation__icon" alt="Koszyk zakupowy" />
+          <img src="img/magnifying-glass-icon.svg" className="navigation__icon" alt="Lupa, wyszukaj" />
         </div>
       </div>
     </nav>
