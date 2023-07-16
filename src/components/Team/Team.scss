@@ -78,6 +78,7 @@ $brand-turquoise-color: #95e1d3;
   justify-items: stretch;
   align-items: stretch;
   margin: 65px auto 80px auto;
+  width: 100%;
   
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -97,9 +98,9 @@ $brand-turquoise-color: #95e1d3;
 .person__overlay {
   background: linear-gradient(to bottom, $brand-red-color, $brand-yellow-color);
   position: absolute;
-  height: 300px;
+  height: 400px;
   width: 100%;
-  max-width: 380px;
+  max-width: 400px;
   opacity: 0;
   transition: opacity .3s ease;
   bottom: 0px;
@@ -136,8 +137,10 @@ $brand-turquoise-color: #95e1d3;
 
 .person__image-wrapper {
   position: relative;
-  height: 300px;
+  margin: auto;
+  height: 400px;
   width: 100%;
+  max-width: 400px;
 
   &:hover {
     background-color: $brand-turquoise-color;
@@ -160,13 +163,13 @@ $brand-turquoise-color: #95e1d3;
 
   .person__image {
     position: relative;
+    max-width: 400px;
     object-fit: cover;
-    max-width: 380px;
     place-items: center;
-    object-position: center;
+    object-position: top;
     transition: all 0.3s ease-in-out;
     width: 100%;
-    height: 300px;
+    height: 100%;
     
     @media (min-width: 768px) {
       height: 470px;

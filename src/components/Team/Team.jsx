@@ -1,11 +1,11 @@
 import React from 'react';
 import './Team.scss';
 
-function Person({ name, role, image }) {
+function Person({ name, role, image, imagex2, imagex3 }) {
   return (
     <div className="person">
       <div className="person__image-wrapper">
-        <img className="person__image" src={image} alt={name} />
+        <img className="person__image" src={image} srcSet={`${imagex2} 2x, ${imagex3} 3x, `} alt={name} />
         <div className="person__overlay"></div>
         <div className="icons">
           <img src="/img/facebook.svg" alt="Facebook"/>
@@ -27,17 +27,23 @@ function Team() {
     {
       name: 'Matthew Dex',
       role: 'Graphic Design',
-      image: '/img/person1.png'
+      image: '/img/person1.png',
+      imagex2: '/img/person1@x2.png',
+      imagex3: '/img/person1@x3.png'
     },
     {
       name: 'Christopher Campbell',
       role: 'Branding/UX Design',
-      image: '/img/person2.png'
+      image: '/img/person2.png',
+      imagex2: '/img/person2@x2.png',
+      imagex3: '/img/person2@x3.png'
     },
     {
       name: 'Michael Fertig',
       role: 'Developer',
-      image: '/img/person3.png'
+      image: '/img/person3.png',
+      imagex2: '/img/person3@x2.png',
+      imagex3: '/img/person3@x3.png'
     }
   ];
 
@@ -55,7 +61,7 @@ function Team() {
       </div>
       <div className="team__grid">
         {teamMembers.map((member, index) => (
-          <Person key={index} name={member.name} role={member.role} image={member.image} />
+          <Person key={index} name={member.name} role={member.role} image={member.image} imagex2={member.imagex2} imagex3={member.imagex3} />
         ))}
       </div>
     </div>
