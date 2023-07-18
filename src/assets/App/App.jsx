@@ -7,18 +7,16 @@ import LandingPage from '../LandingPage/LandingPage.jsx';
 function App() {
   return (
     <Router>
-      <div>
-        <Navigation />
-        <Routes>
-          <Route exact path="/" element={<LandingPage />} />
-          <Route path="/about" element={<LandingPage />} />
-          <Route path="/service" element={<LandingPage />} />
-          <Route path="/work" element={<LandingPage />} />
-          <Route path="/blog" element={<LandingPage />} />
-          <Route path="/contact" element={<LandingPage />} />
-        </Routes>
-      </div>
-    </Router>
+      <Navigation />
+      <Routes>
+        <Route exact path="/vite-react/" element={<LandingPage />} />
+        <Route exact path="/vite-react/about" element={<LandingPage />} />
+        <Route exact path="/vite-react/service" element={<LandingPage />} />
+        <Route exact path="/vite-react/work" element={<LandingPage />} />
+        <Route exact path="/vite-react/blog" element={<LandingPage />} />
+        <Route exact path="/vite-react/contact" element={<LandingPage />} />
+      </Routes>
+  </Router>
   );
 }
 
