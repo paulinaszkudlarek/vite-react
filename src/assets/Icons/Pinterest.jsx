@@ -1,6 +1,6 @@
 function Pinterest() {
   return (
-    <svg fill="#f38181" width="800px" height="800px" viewBox="-3 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#f38181">
+    <svg fill="currentColor" width="800px" height="800px" viewBox="-3 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
       <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
       <g id="SVGRepo_iconCarrier">

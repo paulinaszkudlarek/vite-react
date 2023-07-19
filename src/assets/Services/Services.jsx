@@ -1,7 +1,46 @@
 import React from 'react';
-import './Services.scss'
+import './Services.scss';
 
 function Services() {
+  const services = [
+    {
+      title: 'Photography',
+      description: 'Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.',
+      icon: 'img/clock-icon.svg',
+      alt: 'Ikona zegara'
+    },
+    {
+      title: 'Web design',
+      description: 'Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.',
+      icon: 'img/graph-icon.svg',
+      alt: 'Ikona grafu'
+    },
+    {
+      title: 'Creativity',
+      description: 'Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.',
+      icon: 'img/tv-icon.svg',
+      alt: 'Ikona monitora'
+    },
+    {
+      title: 'SEO',
+      description: 'Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.',
+      icon: 'img/book-icon.svg',
+      alt: 'Ikona książki'
+    },
+    {
+      title: 'CSS/HTML',
+      description: 'Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.',
+      icon: 'img/home-icon.svg',
+      alt: 'Ikona domu'
+    },
+    {
+      title: 'Digital',
+      description: 'Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.',
+      icon: 'img/viewfinder-icon.svg',
+      alt: 'Ikona obiektywu'
+    }
+  ];
+
   return (
     <div className="services">
       <div>
@@ -11,53 +50,20 @@ function Services() {
           </span>
           <span className="services__title--big">
             Amazing services
-            </span>
+          </span>
         </h3>
         <div className="services__separation"></div>
       </div>
       <div className="services__grid">
-        <div className="service">
-          <img className="service__icon" src="img/clock-icon.svg" alt="Ikona zegara" />
-          <div>
-            <h4 className="service__title">Photography</h4>
-            <p className="service__description">Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.</p>
+        {services.map((service, index) => (
+          <div className="service" key={index}>
+            <img className="service__icon" src={service.icon} alt={service.alt} />
+            <div>
+              <h4 className="service__title">{service.title}</h4>
+              <p className="service__description">{service.description}</p>
+            </div>
           </div>
-        </div>
-        <div className="service">
-          <img className="service__icon" src="img/graph-icon.svg" alt="Ikona grafu" />
-          <div>
-            <h4 className="service__title">Web design</h4>
-            <p className="service__description">Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.</p>
-          </div>
-        </div>
-        <div className="service">
-          <img className="service__icon" src="img/tv-icon.svg" alt="Ikona monitora" />
-          <div>
-            <h4 className="service__title">Creativity</h4>
-            <p className="service__description">Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.</p>
-          </div>
-        </div>
-        <div className="service">
-          <img className="service__icon" src="img/book-icon.svg" alt="Ikona książki" />  
-          <div>
-            <h4 className="service__title">SEO</h4>
-            <p className="service__description">Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.</p>
-          </div>
-        </div>
-        <div className="service">
-          <img className="service__icon" src="img/home-icon.svg" alt="Ikona domu" />
-          <div>
-            <h4 className="service__title">CSS/HTML</h4>
-            <p className="service__description">Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.</p>
-          </div>
-        </div>
-        <div className="service">
-          <img className="service__icon" src="img/viewfinder-icon.svg" alt="Ikona obiektywu" />
-          <div>
-           <h4 className="service__title">Digital</h4>
-            <p className="service__description">Lorem Ipsum dolor sit amet, consectetur adipscing elit, sed doeiusmod tempor.</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

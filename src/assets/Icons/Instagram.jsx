@@ -2,7 +2,7 @@ import React from 'react';
 
 function Instagram() {
   return (
-    <svg fill="#f38181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xml: space="preserve">
+    <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve">
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
       <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
       <g id="SVGRepo_iconCarrier">

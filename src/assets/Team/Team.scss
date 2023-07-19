@@ -116,7 +116,7 @@ $brand-turquoise-color: #95e1d3;
   display: none;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
@@ -125,13 +125,16 @@ $brand-turquoise-color: #95e1d3;
   
   svg {
     height: 30px;
-    background-color: $brand-yellow-color;
+    width: max-content;
     padding: 10px 10px;
     border-left: 1px solid $brand-red-color;
+    color: $brand-red-color;
+    background-color: $brand-yellow-color;
     transition: all 0.3s ease-in-out;
     
     &:hover {
-      background-color: #fff;
+      color: #fff;
+      background-color: $brand-red-color;
       cursor: pointer;
     }
   }
