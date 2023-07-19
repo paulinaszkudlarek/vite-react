@@ -12,7 +12,7 @@ function Navigation() {
   return (
     <nav className="navigation">
       <div>
-        <NavLink className="navigation__logo" to="/">MoGo</NavLink>
+        <NavLink className="navigation__logo" to="/vite-react/">MoGo</NavLink>
       </div>
       <div className="navigation__links-wrapper">
         {/* Mobile Navigation */}
@@ -26,21 +26,21 @@ function Navigation() {
             <img src="img/close.svg" className={`x ${isMobileMenuOpen ? 'x--open' : 'x--close'}`} alt="Menu" />
           </div>
           <div className="navigation__mobile-menu-links">
-            <NavLink className="navigation__link" to="/about" onClick={toggleMobileMenu}>About</NavLink>
-            <NavLink className="navigation__link" to="/service" onClick={toggleMobileMenu}>Service</NavLink>
-            <NavLink className="navigation__link" to="/work" onClick={toggleMobileMenu}>Work</NavLink>
-            <NavLink className="navigation__link" to="/blog" onClick={toggleMobileMenu}>Blog</NavLink>
-            <NavLink className="navigation__link" to="/contact" onClick={toggleMobileMenu}>Contact</NavLink>
+            <NavLink className="navigation__link" to="/vite-react/about" onClick={toggleMobileMenu}>About</NavLink>
+            <NavLink className="navigation__link" to="/vite-react/service" onClick={toggleMobileMenu}>Service</NavLink>
+            <NavLink className="navigation__link" to="/vite-react/work" onClick={toggleMobileMenu}>Work</NavLink>
+            <NavLink className="navigation__link" to="/vite-react/blog" onClick={toggleMobileMenu}>Blog</NavLink>
+            <NavLink className="navigation__link" to="/vite-react/contact" onClick={toggleMobileMenu}>Contact</NavLink>
           </div>
         </div>
 
         {/* Desktop Navigation */}
         <div className="navigation__desktop-menu">
-          <NavLink className="navigation__link" to="/about">About</NavLink>
-          <NavLink className="navigation__link" to="/service">Service</NavLink>
-          <NavLink className="navigation__link" to="/work">Work</NavLink>
-          <NavLink className="navigation__link" to="/blog">Blog</NavLink>
-          <NavLink className="navigation__link" to="/contact">Contact</NavLink>
+          <NavLink className="navigation__link" to="/vite-react/about">About</NavLink>
+          <NavLink className="navigation__link" to="/vite-react/service">Service</NavLink>
+          <NavLink className="navigation__link" to="/vite-react/work">Work</NavLink>
+          <NavLink className="navigation__link" to="/vite-react/blog">Blog</NavLink>
+          <NavLink className="navigation__link" to="/vite-react/contact">Contact</NavLink>
         </div>
         <div className="navigation__icons--desktop">
           <img src="img/cart-icon.svg" className="navigation__icon" alt="Koszyk zakupowy" />

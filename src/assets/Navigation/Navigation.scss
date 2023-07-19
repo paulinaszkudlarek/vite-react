@@ -44,7 +44,7 @@ $brand-red-color: #f38181;
       left: 0;
       width: 100%;
       background-color: #fff;
-      padding: 10px;
+      margin: 10px;
       border-radius: 5px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
       z-index: 10;
@@ -81,10 +81,16 @@ $brand-red-color: #f38181;
       text-decoration: none;
       color: $brand-red-color;
       padding: 20px 15px;
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
 
       &:hover {
-        color: #ffffff;
+        background-color: #f38181;
+        color: #fff;
+      }
+
+      &.active {
+        background-color: #f38181;
+        color: #fff;
       }
     }
   }
@@ -97,8 +103,9 @@ $brand-red-color: #f38181;
     text-decoration: none;
     color: #ffffff;
     margin-left: 20px;
+    padding: 10px 0px;
+    align-content: center;
     transition: color 0.3s ease;
-    padding-bottom: 10px;
 
     &:hover {
       color: $brand-yellow-color;
@@ -149,24 +156,33 @@ $brand-red-color: #f38181;
 .navigation__icons {
   display: block;
   margin: auto;
-
+  
   .navigation__icon {
-    height: 22px;
-    width: 30px;
+    height: 25px;
+    width: 32px;
     padding: 7px 0px;
     margin: 0 13px;
-
+    
     &:hover {
       transform: scale(1.15);
     }
   }
 }
 
-.navigation__icons--desktop .navigation__icon {
-  height: 22px;
-  width: 30px;
-  padding: 7px 0px;
-  margin: 0 13px;
+.navigation__icons--desktop {
+  margin-left: 30px;
+
+  .navigation__icon  { 
+    height: 22px;
+    width: 30px;
+    padding: 7px 0px;
+    margin: 0 10px;
+    transition: all 0.1s ease-in-out;
+    
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
 
   @media (max-width: 767px) {
     display: none;

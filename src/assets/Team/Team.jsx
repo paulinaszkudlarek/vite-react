@@ -1,4 +1,8 @@
 import React from 'react';
+import Facebook from '../Icons/Facebook';
+import Twitter from '../Icons/Twitter';
+import Pinterest from '../Icons/Pinterest';
+import Instagram from '../Icons/Instagram';
 import './Team.scss';
 
 function Person({ name, role, image, imagex2, imagex3 }) {
@@ -8,10 +12,14 @@ function Person({ name, role, image, imagex2, imagex3 }) {
         <img className="person__image" src={image} srcSet={`${imagex2} 2x, ${imagex3} 3x, `} alt={name} />
         <div className="person__overlay"></div>
         <div className="icons">
-          <img src="img/facebook.svg" alt="Facebook"/>
+          {/* <img src="img/facebook.svg" alt="Facebook"/>
           <img src="img/twitter.svg" alt="Twitter" />
           <img src="img/pinterest.svg" alt="Pinterest" />
-          <img src="img/instagram.svg" alt="Instagram" />
+          <img src="img/instagram.svg" alt="Instagram" /> */}
+          <Facebook />
+          <Twitter />
+          <Pinterest />
+          <Instagram />
         </div>
       </div>
       <div>
